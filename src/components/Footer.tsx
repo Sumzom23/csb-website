@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom'
 import Logo from './Logo'
+import { navLinks } from '../data/navigation'
 import './Footer.css'
 
-const siteLinks = ['About', 'Team', 'Blog', 'Contact']
 const reachLinks = [
   { label: 'circuitskillbuilder@gmail.com', href: 'mailto:circuitskillbuilder@gmail.com' },
   { label: 'Discord', href: 'https://discord.com' },
@@ -23,9 +24,9 @@ function Footer() {
           <div className="footer__group">
             <p className="footer__label">Site</p>
             <ul className="footer__list">
-              {siteLinks.map((link) => (
-                <li key={link}>
-                  <a href="#">{link}</a>
+              {navLinks.map((link) => (
+                <li key={link.path}>
+                  <Link to={link.path}>{link.label}</Link>
                 </li>
               ))}
             </ul>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Hero.css'
 
 function Hero() {
@@ -9,10 +10,10 @@ function Hero() {
         <br />
         <em>Available</em> to All.
       </h1>
-      <a className="hero__cta" href="#about">
+      <Link className="hero__cta" to="/about">
         About Us
         <span aria-hidden="true">→</span>
-      </a>
+      </Link>
     </section>
   )
 }
