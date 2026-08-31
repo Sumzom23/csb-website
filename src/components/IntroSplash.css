@@ -76,26 +76,6 @@
     transform 0.3s ease;
 }
 
-.intro-splash__hint {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-ink-faint);
-  animation: intro-hint-pulse 2s ease-in-out infinite;
-  transition: opacity 0.25s ease;
-}
-
-@keyframes intro-hint-pulse {
-  0%,
-  100% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
 /* Phase 1: the door leaf swings open on its hinge, the frame turns pink */
 .intro-splash--swing .intro-splash__leaf {
   transform: rotateY(85deg);
@@ -106,7 +86,6 @@
 }
 
 .intro-splash--swing .intro-splash__text,
-.intro-splash--swing .intro-splash__hint,
 .intro-splash--swing .intro-splash__skip {
   opacity: 0;
   transform: translateY(-6px);
@@ -137,7 +116,6 @@
   .intro-splash__frame--pink,
   .intro-splash__leaf,
   .intro-splash__text,
-  .intro-splash__hint,
   .intro-splash__skip {
     transition: none;
     animation: none;

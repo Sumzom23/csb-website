@@ -70,7 +70,6 @@ function IntroSplash() {
           <img className="intro-splash__leaf" src="/logo/door-leaf.png" alt="" aria-hidden="true" />
         </div>
         <span className="intro-splash__text">Circuit Skillbuilder</span>
-        <span className="intro-splash__hint">Click to enter</span>
       </div>
     </div>
   )
