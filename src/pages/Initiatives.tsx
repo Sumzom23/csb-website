@@ -136,9 +136,6 @@ function Initiatives() {
 
           {activeTab === 'tournaments' && (
             <>
-              <div className="content-page__body">
-                <p>{tournaments.text}</p>
-              </div>
               <ul className="initiative__list">
                 {tournaments.items.map((item) => (
                   <li key={item.href}>
