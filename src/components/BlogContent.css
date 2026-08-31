@@ -276,11 +276,3 @@
   font-size: 0.8125rem;
 }
 
-.blog-footer-note {
-  margin-top: var(--space-5);
-  padding-top: var(--space-3);
-  border-top: 1px solid var(--color-border);
-  font-family: var(--font-display);
-  font-size: 1.125rem;
-  color: var(--color-ink-soft);
-}

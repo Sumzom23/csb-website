@@ -38,12 +38,6 @@ function Blog() {
             </Reveal>
           ))}
         </div>
-
-        <p className="blog-footer-note">
-          {blogPage.footerNoteLine1}
-          <br />
-          {blogPage.footerNoteLine2}
-        </p>
       </div>
     </main>
   )
