@@ -14,17 +14,27 @@ function Hero() {
       </div>
 
       <Reveal className="hero__lede">
-        <h1 className="hero__title">
-          {hero.titleLine1}
-          <br />
-          <span className="hero__title-accent">{hero.titleAccent}</span>
-          {hero.titleSuffix}
-        </h1>
-        <p className="hero__deck">{hero.deck}</p>
-        <Link className="hero__cta" to="/about">
-          {hero.ctaLabel}
-          <span aria-hidden="true">→</span>
-        </Link>
+        <div className="hero__copy">
+          <h1 className="hero__title">
+            {hero.titleLine1}
+            <br />
+            <span className="hero__title-accent">{hero.titleAccent}</span>
+            {hero.titleSuffix}
+          </h1>
+          <p className="hero__deck">{hero.deck}</p>
+          <Link className="hero__cta" to="/about">
+            {hero.ctaLabel}
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+
+        <figure className="hero__photo">
+          <img
+            src="/carousel/presentation-trophies.jpg"
+            alt="Two Circuit Skillbuilder debaters holding tournament trophies outside Presentation High School"
+          />
+          <figcaption>Presentation High School: another tournament, another set of trophies.</figcaption>
+        </figure>
       </Reveal>
     </section>
   )
