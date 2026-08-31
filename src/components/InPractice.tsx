@@ -68,24 +68,24 @@ function InPractice() {
 
   return (
     <section className="in-practice">
-      <div className="in-practice__inner">
-        <div className="in-practice__viewport">
-          <div className="in-practice__track" ref={trackRef}>
-            {[...slides, ...slides].map((slide, index) => (
-              <article className="in-practice__slide" key={index}>
-                <div className="in-practice__card">
-                  <img className="in-practice__photo" src={slide.photo} alt={slide.caption} loading="lazy" />
-                  <span className="in-practice__badge">{slide.badge}</span>
-                </div>
-                <div className="in-practice__caption-row">
-                  <p className="in-practice__caption">{slide.caption}</p>
-                  <span className="in-practice__label">{slide.label}</span>
-                </div>
-              </article>
-            ))}
-          </div>
+      <div className="in-practice__viewport">
+        <div className="in-practice__track" ref={trackRef}>
+          {[...slides, ...slides].map((slide, index) => (
+            <article className="in-practice__slide" key={index}>
+              <div className="in-practice__card">
+                <img className="in-practice__photo" src={slide.photo} alt={slide.caption} loading="lazy" />
+                <span className="in-practice__badge">{slide.badge}</span>
+              </div>
+              <div className="in-practice__caption-row">
+                <p className="in-practice__caption">{slide.caption}</p>
+                <span className="in-practice__label">{slide.label}</span>
+              </div>
+            </article>
+          ))}
         </div>
+      </div>
 
+      <div className="in-practice__inner">
         <div className="in-practice__controls">
           <div className="in-practice__arrows">
             <button type="button" className="in-practice__arrow" aria-label="Previous slide" onClick={() => nudge(-1)}>

@@ -1,19 +1,5 @@
 .hero {
-  padding: var(--space-4) var(--edge) var(--space-6);
-}
-
-.hero__masthead {
-  display: flex;
-  justify-content: space-between;
-  max-width: var(--max-width);
-  margin: 0 auto var(--space-5);
-  padding-bottom: var(--space-2);
-  border-bottom: 1px solid var(--color-border);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-ink-faint);
+  padding: var(--space-6) var(--edge);
 }
 
 .hero__lede {

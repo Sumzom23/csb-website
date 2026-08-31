@@ -10,7 +10,6 @@
 
 .in-practice__viewport {
   overflow: hidden;
-  margin-right: calc(var(--edge) * -1);
 }
 
 .in-practice__track {
@@ -118,8 +117,3 @@
   transform: translateY(0);
 }
 
-@media (max-width: 640px) {
-  .in-practice__viewport {
-    margin-right: calc(var(--edge) * -1);
-  }
-}

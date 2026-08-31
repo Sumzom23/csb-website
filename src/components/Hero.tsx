@@ -8,11 +8,6 @@ function Hero() {
 
   return (
     <section className="hero">
-      <div className="hero__masthead">
-        <span>{hero.mastheadLeft}</span>
-        <span>{hero.mastheadRight}</span>
-      </div>
-
       <Reveal className="hero__lede">
         <div className="hero__copy">
           <h1 className="hero__title">
