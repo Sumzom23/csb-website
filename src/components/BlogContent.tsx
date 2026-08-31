@@ -31,7 +31,7 @@ function BlogContent({ content }: BlogContentProps) {
         return (
           <blockquote key={index} className="blog-content__quote">
             <p>{block.text}</p>
-            <footer>— {block.attribution}</footer>
+            <footer>{block.attribution}</footer>
           </blockquote>
         )
       })}

@@ -1,31 +1,46 @@
 :root {
-  --color-bg: #f9f8f4;
-  --color-bg-card: #ffffff;
-  --color-text: #111111;
-  --color-text-muted: #6b7280;
-  --color-text-light: #9ca3af;
-  --color-accent: #a67c65;
-  --color-quote: #a0522d;
-  --color-border: #e5e5e5;
-  --color-dark: #1a1814;
-  --color-yellow: #f9d99a;
-  --font-serif: 'DM Serif Display', Georgia, 'Times New Roman', serif;
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --max-width: 1200px;
-  --section-padding: clamp(3rem, 8vw, 6rem);
+  --color-bg: #f7f2ea;
+  --color-bg-raised: #fffdfa;
+  --color-ink: #1c1712;
+  --color-ink-soft: rgba(28, 23, 18, 0.64);
+  --color-ink-faint: rgba(28, 23, 18, 0.42);
+  --color-border: rgba(28, 23, 18, 0.15);
+  --color-border-strong: rgba(28, 23, 18, 0.32);
+  --color-accent: #c23b62;
+  --color-accent-dark: #9c2c4d;
+  --color-accent-tint: rgba(194, 59, 98, 0.1);
+  --color-accent-ink: #fffdfa;
+
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --max-width: 1240px;
+  --edge: clamp(1.25rem, 4vw, 3rem);
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   min-width: 320px;
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.6;
-  color: var(--color-text);
+  color: var(--color-ink);
   background-color: var(--color-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,7 +58,46 @@ button {
   cursor: pointer;
 }
 
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-transition {
+  animation: page-fade-in 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
 img {
   display: block;
   max-width: 100%;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .page-transition {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

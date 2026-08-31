@@ -1,26 +1,31 @@
+import { content } from '../data/content'
+import Reveal from '../components/Reveal'
 import '../components/ContentPage.css'
 
 function Contact() {
+  const { contact } = content
+
   return (
     <main className="content-page">
-      <div className="content-page__inner">
-        <p className="content-page__eyebrow">Reach Us</p>
-        <h1 className="content-page__title">Contact</h1>
+      <div className="content-page__masthead">
+        <span>{contact.mastheadLeft}</span>
+        <span>{contact.mastheadRight}</span>
+      </div>
+
+      <Reveal className="content-page__inner">
+        <h1 className="content-page__title">{contact.title}</h1>
         <div className="content-page__body">
+          <p>{contact.intro}</p>
           <p>
-            Have questions about joining Circuit Skillbuilder, getting coaching, or partnering with
-            us? We&apos;d love to hear from you.
+            <a href={`mailto:${contact.email}`}>{contact.email}</a>
           </p>
           <p>
-            <a href="mailto:circuitskillbuilder@gmail.com">circuitskillbuilder@gmail.com</a>
-          </p>
-          <p>
-            <a href="https://discord.com" target="_blank" rel="noreferrer">
-              Discord
+            <a href={contact.discordHref} target="_blank" rel="noreferrer">
+              {contact.discordLabel}
             </a>
           </p>
         </div>
-      </div>
+      </Reveal>
     </main>
   )
 }

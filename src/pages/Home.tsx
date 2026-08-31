@@ -1,15 +1,15 @@
 import Hero from '../components/Hero'
-import Mission from '../components/Mission'
 import InPractice from '../components/InPractice'
 import WhatWeProvide from '../components/WhatWeProvide'
 import Testimonials from '../components/Testimonials'
 import CommunityCTA from '../components/CommunityCTA'
+import IntroSplash from '../components/IntroSplash'
 
 function Home() {
   return (
     <main>
+      <IntroSplash />
       <Hero />
-      <Mission />
       <InPractice />
       <WhatWeProvide />
       <Testimonials />

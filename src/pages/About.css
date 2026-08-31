@@ -1,0 +1,9 @@
+.about-lede {
+  margin-bottom: var(--space-5);
+}
+
+.about-values {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border-strong);
+}
