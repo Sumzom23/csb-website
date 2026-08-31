@@ -5,6 +5,8 @@
 .testimonials__list {
   display: flex;
   flex-direction: column;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .testimonials__item {
