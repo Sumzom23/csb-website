@@ -14,17 +14,23 @@ function Hero() {
       </div>
 
       <Reveal className="hero__lede">
-        <h1 className="hero__title">
-          {hero.titleLine1}
-          <br />
-          <span className="hero__title-accent">{hero.titleAccent}</span>
-          {hero.titleSuffix}
-        </h1>
-        <p className="hero__deck">{hero.deck}</p>
-        <Link className="hero__cta" to="/about">
-          {hero.ctaLabel}
-          <span aria-hidden="true">→</span>
-        </Link>
+        <div className="hero__copy">
+          <h1 className="hero__title">
+            {hero.titleLine1}
+            <br />
+            <span className="hero__title-accent">{hero.titleAccent}</span>
+            {hero.titleSuffix}
+          </h1>
+          <p className="hero__deck">{hero.deck}</p>
+          <Link className="hero__cta" to="/about">
+            {hero.ctaLabel}
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+
+        <div className="hero__mark" aria-hidden="true">
+          <img src="/logo/circuit-skillbuilder-icon-pink.png" alt="" />
+        </div>
       </Reveal>
     </section>
   )
