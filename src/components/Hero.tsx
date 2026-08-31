@@ -29,7 +29,7 @@ function Hero() {
         </div>
 
         <div className="hero__mark" aria-hidden="true">
-          <img src="/logo/circuit-skillbuilder-icon-pink.png" alt="" />
+          <img src="/logo/circuit-skillbuilder-icon.png" alt="" />
         </div>
       </Reveal>
     </section>
