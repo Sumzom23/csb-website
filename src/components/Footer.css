@@ -1,5 +1,6 @@
 .footer {
-  padding: var(--section-padding) 2rem 3rem;
+  padding: var(--space-6) var(--edge) var(--space-4);
+  border-top: 1px solid var(--color-border-strong);
 }
 
 .footer__inner {
@@ -7,32 +8,28 @@
   margin: 0 auto;
 }
 
-.footer__brand {
-  margin-bottom: 3rem;
+.footer__top {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: var(--space-5);
+  margin-bottom: var(--space-5);
 }
 
 .footer__mission {
-  max-width: 28rem;
-  margin: 1.25rem 0 0;
+  max-width: 22rem;
+  margin: var(--space-3) 0 0;
   font-size: 0.9375rem;
   line-height: 1.65;
-  color: #4b5563;
-}
-
-.footer__links {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  margin-bottom: 3rem;
+  color: var(--color-ink-soft);
 }
 
 .footer__label {
-  margin: 0 0 0.875rem;
+  margin: 0 0 var(--space-2);
   font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-text-light);
+  color: var(--color-ink-faint);
 }
 
 .footer__list {
@@ -47,22 +44,27 @@
 
 .footer__list a {
   font-size: 0.9375rem;
-  transition: opacity 0.2s ease;
+  color: var(--color-ink-soft);
+  transition: color 0.15s ease;
 }
 
 .footer__list a:hover {
-  opacity: 0.65;
+  color: var(--color-accent);
 }
 
 .footer__bottom {
-  padding-top: 2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding-top: var(--space-3);
   border-top: 1px solid var(--color-border);
 }
 
 .footer__copyright {
-  margin: 0 0 0.75rem;
+  margin: 0;
   font-size: 0.8125rem;
-  color: var(--color-text-light);
+  color: var(--color-ink-faint);
 }
 
 .footer__tagline {
@@ -71,12 +73,22 @@
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-text-light);
+  color: var(--color-accent);
 }
 
-@media (max-width: 640px) {
-  .footer {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+@media (max-width: 720px) {
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+    margin-bottom: var(--space-2);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
   }
 }

@@ -1,3 +1,5 @@
+import { content } from '../data/content'
+import Reveal from './Reveal'
 import './CommunityCTA.css'
 
 function DiscordIcon() {
@@ -14,33 +16,26 @@ function DiscordIcon() {
 }
 
 function CommunityCTA() {
+  const cta = content.communityCTA
+
   return (
     <section className="community-cta">
       <div className="community-cta__inner">
-        <div className="community-cta__card">
-          <p className="community-cta__eyebrow">The Community</p>
-          <h2 className="community-cta__title">
-            Debate is lonely when you&apos;re the only one on your team.{' '}
-            <em>Come sit with us.</em>
-          </h2>
-          <p className="community-cta__text">
-            Our Discord is where students trade prep, get last-minute round advice, and find
-            practice partners across the country. Free, moderated, and open to any high school
-            debater.
-          </p>
-          <div className="community-cta__actions">
-            <a
-              className="community-cta__button"
-              href="https://discord.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <DiscordIcon />
-              Join our Discord
-            </a>
-            <span className="community-cta__tags">FREE · MODERATED · STUDENT-SAFE</span>
+        <Reveal className="community-cta__grid">
+          <div className="community-cta__copy">
+            <h2 className="community-cta__title">
+              {cta.titlePrefix} <em>{cta.titleEmphasis}</em>
+            </h2>
+            <p className="community-cta__text">{cta.text}</p>
           </div>
-        </div>
+
+          <div className="community-cta__actions">
+            <a className="community-cta__button" href={cta.buttonHref} target="_blank" rel="noreferrer">
+              <DiscordIcon />
+              {cta.buttonLabel}
+            </a>
+          </div>
+        </Reveal>
       </div>
     </section>
   )

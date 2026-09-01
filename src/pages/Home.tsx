@@ -1,26 +1,20 @@
-import Header from '../components/Header'
 import Hero from '../components/Hero'
-import Mission from '../components/Mission'
 import InPractice from '../components/InPractice'
 import WhatWeProvide from '../components/WhatWeProvide'
 import Testimonials from '../components/Testimonials'
 import CommunityCTA from '../components/CommunityCTA'
-import Footer from '../components/Footer'
+import IntroSplash from '../components/IntroSplash'
 
 function Home() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <Mission />
-        <InPractice />
-        <WhatWeProvide />
-        <Testimonials />
-        <CommunityCTA />
-      </main>
-      <Footer />
-    </>
+    <main>
+      <IntroSplash />
+      <Hero />
+      <InPractice />
+      <WhatWeProvide />
+      <Testimonials />
+      <CommunityCTA />
+    </main>
   )
 }
 

@@ -1,18 +1,32 @@
+import { Link } from 'react-router-dom'
+import { content } from '../data/content'
+import Reveal from './Reveal'
 import './Hero.css'
 
 function Hero() {
+  const { hero } = content
+
   return (
     <section className="hero">
-      <p className="hero__eyebrow">Circuit Skillbuilder</p>
-      <h1 className="hero__title">
-        Circuit Debate.
-        <br />
-        <em>Available</em> to All.
-      </h1>
-      <a className="hero__cta" href="#about">
-        About Us
-        <span aria-hidden="true">→</span>
-      </a>
+      <Reveal className="hero__lede">
+        <div className="hero__copy">
+          <h1 className="hero__title">
+            {hero.titleLine1}
+            <br />
+            <span className="hero__title-accent">{hero.titleAccent}</span>
+            {hero.titleSuffix}
+          </h1>
+          <p className="hero__deck">{hero.deck}</p>
+          <Link className="hero__cta" to="/about">
+            {hero.ctaLabel}
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+
+        <div className="hero__mark" aria-hidden="true">
+          <img src="/logo/circuit-skillbuilder-icon.png" alt="" />
+        </div>
+      </Reveal>
     </section>
   )
 }

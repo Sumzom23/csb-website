@@ -1,81 +1,64 @@
 .testimonials {
-  padding: var(--section-padding) 2rem;
+  padding: var(--space-6) 0;
 }
 
-.testimonials__inner {
+.testimonials__list {
+  display: flex;
+  flex-direction: column;
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
-.testimonials__eyebrow {
-  margin: 0 0 0.75rem;
-  font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--color-text-light);
-}
-
-.testimonials__title {
-  margin: 0 0 2.5rem;
-  max-width: 28rem;
-  font-family: var(--font-serif);
-  font-size: clamp(2rem, 5vw, 2.75rem);
-  font-weight: 400;
-  line-height: 1.15;
-}
-
-.testimonials__card {
-  border: 1px solid var(--color-border);
-  border-radius: 1rem;
-  background: var(--color-bg-card);
-  overflow: hidden;
-}
-
 .testimonials__item {
-  padding: clamp(2rem, 5vw, 3rem);
+  padding: var(--space-6) clamp(1rem, 4vw, 2.5rem);
+  border-top: 1px solid var(--color-border-strong);
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
-.testimonials__divider {
-  height: 1px;
-  margin: 0 clamp(2rem, 5vw, 3rem);
-  background: var(--color-border);
+.testimonials__item--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonials__item:last-child {
+  border-bottom: 1px solid var(--color-border-strong);
 }
 
 .testimonials__quote-mark {
   display: block;
-  margin-bottom: 0.5rem;
-  font-family: var(--font-serif);
-  font-size: 2.5rem;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 4.5rem);
   line-height: 1;
-  color: var(--color-quote);
+  color: var(--color-accent);
 }
 
 .testimonials__quote {
-  margin: 0 0 1.75rem;
-  font-family: var(--font-serif);
-  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  margin: 0 0 var(--space-3);
+  max-width: 56rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3.6vw, 2.25rem);
   font-style: italic;
-  line-height: 1.55;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
 }
 
 .testimonials__name {
-  margin: 0 0 0.375rem;
-  font-size: 0.9375rem;
-  font-weight: 700;
-}
-
-.testimonials__meta {
   margin: 0;
-  font-size: 0.625rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  color: var(--color-text-light);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
-@media (max-width: 640px) {
-  .testimonials {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+@media (prefers-reduced-motion: reduce) {
+  .testimonials__item {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

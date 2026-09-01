@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "ctaLabel": "About the mission"
+  },
+  "initiatives": {
+    "mastheadLeft": "Initiatives",
+    "mastheadRight": "Circuit Skillbuilder",
+    "title": "Initiatives",
+    "intro": "Everything we run, in one place: free lessons, free coaching, free evidence, and a tournament with no entry fee.",
+    "lessons": {
+      "title": "Lessons",
+      "text": "All lessons and videos are published on our YouTube channel, covering everything from case construction to advanced technical debate.",
+      "channelLabel": "YouTube channel",
+      "channelHref": "https://www.youtube.com/channel/UCYFJI20Gcs1nJsjCxp_JW0A",
+      "videos": [
+        {
+          "title": "2025 TOC R3: Strake Jesuit SM (Neg, 1st) vs Blake BL (Aff, 2nd), Flay PF Debate",
+          "href": "https://www.youtube.com/watch?v=KZxp5rUxp_A"
+        },
+        {
+          "title": "2025 Surveillance Kritik Demo Debate: Strake SM (Aff, 1st) vs Nueva AH (Neg, 2nd), Tech PF Debate",
+          "href": "https://www.youtube.com/watch?v=Fo4SY5tg8gA"
+        },
+        {
+          "title": "2025 Feb ICC Demo Debate: Strarker ML (Neg, 1st) vs Canyomac MW (Aff, 2nd), Tech PF Debate",
+          "href": "https://www.youtube.com/watch?v=7JpM7_PAEEo"
+        },
+        {
+          "title": "Intro to Prepping, with Willie Tsai",
+          "href": "https://www.youtube.com/watch?v=hLuPdsQIcOs"
+        }
+      ]
+    },
+    "coaching": {
+      "title": "Coaching",
+      "text": "We've partnered with Outreach Debate, The Debate Hotline, and The Debate Group to run a united coaching platform, matching debaters with free mentors.",
+      "menteeLabel": "Register for coaching",
+      "menteeHref": "https://docs.google.com/forms/d/e/1FAIpQLSf9aj1sk7mKGBpk16moEcHV22iIIvPzSy13jfexOLhzqcTkMQ/viewform",
+      "instructorLabel": "Become an instructor",
+      "instructorHref": "https://docs.google.com/forms/d/e/1FAIpQLSd5JG1EIvgFeZHtY5UWU8chSaUSDejekiTvQxTZWDOd0sd-9A/viewform",
+      "partnersLabel": "Coaching partners",
+      "partners": [
+        "Outreach Debate",
+        "The Debate Hotline",
+        "The Debate Group"
+      ]
+    },
+    "backfiles": {
+      "title": "Backfiles",
+      "text": "Free evidence files, open to anyone. Click a title for access.",
+      "files": [
+        {
+          "title": "Must-Have Cards",
+          "description": "Generic evidence reused across topics for its versatility. Mostly impact cards.",
+          "href": "https://docs.google.com/document/d/1wlNzDJXc8mI8CcqTVc8bfMYF0aPQ0024ApY5CgcGsCw/edit?usp=sharing"
+        },
+        {
+          "title": "Spark",
+          "description": "Evidence for the spark impact turn.",
+          "href": "https://docs.google.com/document/d/1OPE3k8m-SVoNYeSkHAXYWcV6u7l1wOEZJ7Ipf0N8KVM/edit"
+        },
+        {
+          "title": "Extinction First Framing",
+          "description": "Evidence arguing the judge should prioritize existential risks before all other impacts.",
+          "href": "https://docs.google.com/document/d/1u6-e5cGM1HuIMZYlGM8sxcRhDYazIzfRYynRShAr9ck/edit?usp=sharing"
+        }
+      ]
+    },
+    "tournaments": {
+      "title": "Tournaments",
+      "text": "We host our own tournament, free to enter.",
+      "items": [
+        {
+          "title": "1st Annual Circuit Skillbuilder Tournament",
+          "href": "https://www.tabroom.com/index/tourn/index.mhtml?tourn_id=35764"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "mastheadLeft": "Circuit Skillbuilder",
+    "mastheadRight": "Student-run nonprofit",
+    "titleLine1": "Circuit debate,",
+    "titleAccent": "available",
+    "titleSuffix": " to all.",
+    "deck": "National circuit debate is extremely difficult to learn. From the exorbitant costs and challenging skills to the exclusive nature of the activity, there are numerous obstacles to success. Circuit Skillbuilder is a student-run nonprofit that aims to break down these barriers by providing free resources and open assistance to debaters who might not have these luxuries otherwise, ensuring that everyone can reach their full potential.",
+    "ctaLabel": "Read our mission"
+  },
+  "inPractice": {
+    "slides": [
+      {
+        "photo": "/carousel/summer-camp.webp",
+        "badge": "CAMP",
+        "caption": "Circuit Skillbuilder's Summer Camp",
+        "label": "SUMMER"
+      },
+      {
+        "photo": "/carousel/first-fundraiser.webp",
+        "badge": "FUNDRAISER",
+        "caption": "Circuit Skillbuilder's First Fundraiser",
+        "label": "MILESTONE"
+      },
+      {
+        "photo": "/carousel/aasha-infinite.webp",
+        "badge": "PARTNER",
+        "caption": "Teaching with AASHA Infinite",
+        "label": "PARTNERSHIP"
+      },
+      {
+        "photo": "/carousel/youtube-debate.webp",
+        "badge": "LESSON",
+        "caption": "A debate from our Youtube Channel",
+        "label": "LESSONS"
+      },
+      {
+        "photo": "/carousel/tournament-trophies.jpg",
+        "badge": "TOURNAMENT",
+        "caption": "Our Tournament Results",
+        "label": "RESULTS"
+      }
+    ]
+  },
+  "whatWeProvide": {
+    "features": [
+      {
+        "title": "Lessons",
+        "href": "/initiatives#lessons"
+      },
+      {
+        "title": "Coaching",
+        "href": "/initiatives#coaching"
+      },
+      {
+        "title": "Backfiles",
+        "href": "/initiatives#backfiles"
+      },
+      {
+        "title": "Tournaments",
+        "href": "/initiatives#tournaments"
+      }
+    ]
+  },
+  "testimonials": {
+    "items": [
+      {
+        "quote": "The Circuit Skillbuilder scholarship will allow me to compete at a few national circuit PF tournaments I wouldn't have been able to attend otherwise. Debating in a geographically isolated region can be incredibly limiting, but this program is helping to change that.",
+        "name": "Kai Niendorf"
+      },
+      {
+        "quote": "Circuit Skillbuilder is truly focused on helping the debate community. I have sent their free cases to many novices who have told me it's a great help, and their scholarship program genuinely will make debate so much more accessible and equitable. Everyone at CSB makes it their mission to make the space as welcoming as possible.",
+        "name": "Apollin Lu"
+      },
+      {
+        "quote": "CSB's scholarship program provided me with previously gatekept opportunities: the ability to fly out, compete and hire judges at prestigious and expensive national circuit tournaments. Additionally, CSB's resources are literally a game changer for anyone attempting to enter the PF circuit, as they help you understand the intricacies of case construction and high-level debate.",
+        "name": "Anonymous CSB Grant Recipient"
+      }
+    ]
+  },
+  "communityCTA": {
+    "titlePrefix": "Join",
+    "titleEmphasis": "The Circuit.",
+    "text": "Join our Discord to follow Circuit Skillbuilder's latest announcements and engage in a community with debaters from all around the country.",
+    "buttonLabel": "Open Discord",
+    "buttonHref": "https://discord.com"
+  },
+  "footer": {
+    "mission": "A student-led nonprofit opening high school national circuit debate to everyone.",
+    "copyright": "\u00a9 2026 Circuit Skillbuilder, a 501(c)(3).",
+    "tagline": "For the underdog."
+  },
+  "about": {
+    "mastheadLeft": "About",
+    "mastheadRight": "Circuit Skillbuilder",
+    "title": "Our mission",
+    "quote": "Not just increasing accessibility in debate, but opening avenues to success.",
+    "bodyParagraphs": [
+      "High school national circuit debate is plagued by the persistent problem of inclusivity. Due to the incredibly technical and nuanced nature of the activity, it is remarkably difficult to learn circuit debate without an established team or a comprehensive support system. Underprivileged debaters are frequently left in a state of gridlock, unable to improve their skills and with nobody to turn to for help. This is compounded by high costs of participation and an overall lack of a welcoming community. In other words, debate is by design built against the underdog.",
+      "Thus, it is no surprise that every year and at every national circuit tournament, the same schools and teams are the ones winning. Low income and other disadvantaged debaters are all but pushed out.",
+      "We hope to help remedy this crisis. Circuit Skillbuilder offers in-depth video lessons that teach the essential skills of high level competition, no-cost prep usually paywalled behind elite programs, and free but incredibly talented coaches that help with regular improvement, serving as a much needed support system. We also aim to foster a friendly community through our services and social platforms, breaking down the isolation that many fledgling debaters feel. As we expand, we hope to offer scholarships to fund promising debaters, practice tournaments, services in different events, and more, all in the name of ensuring an equitable playing field."
+    ],
+    "valuesTitle": "Our values",
+    "valuesParagraphs": [
+      "Whether you have a large debate program or a team with just a handful of members, we believe that everyone deserves an equal chance to succeed at the highest level of debate.",
+      "We envision a reality where high school national circuit debate is truly open and inviting to all, not just to those who were privileged enough to have it opened for them."
+    ]
+  },
+  "contact": {
+    "mastheadLeft": "Contact",
+    "mastheadRight": "Circuit Skillbuilder",
+    "title": "Reach us",
+    "intro": "Have questions about joining Circuit Skillbuilder, getting coaching, or partnering with us? We'd love to hear from you.",
+    "email": "circuitskillbuilder@gmail.com",
+    "discordLabel": "Discord",
+    "discordHref": "https://discord.com"
+  },
+  "blogPage": {
+    "mastheadLeft": "Blog",
+    "mastheadRight": "Circuit Skillbuilder",
+    "title": "Blog",
+    "footerNoteLine1": "Have a blog?",
+    "footerNoteLine2": "If you want something published, send it in."
+  },
+  "teamPage": {
+    "mastheadLeft": "Team",
+    "title": "Meet the team",
+    "joinTitle": "Join us",
+    "joinText": "We are always looking for motivated and talented staff to help us on our mission to make debate as equitable as possible!"
+  }
+}

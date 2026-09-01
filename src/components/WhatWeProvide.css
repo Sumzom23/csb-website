@@ -1,5 +1,5 @@
 .provide {
-  padding: var(--section-padding) 2rem;
+  padding: var(--space-6) var(--edge);
 }
 
 .provide__inner {
@@ -7,77 +7,51 @@
   margin: 0 auto;
 }
 
-.provide__title {
-  margin: 0 0 clamp(2.5rem, 6vw, 4rem);
-  text-align: center;
-  font-family: var(--font-serif);
-  font-size: clamp(2rem, 5vw, 2.75rem);
+.provide__list {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid var(--color-accent);
+}
+
+.provide__row {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.provide__row::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-ink);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.provide__row:hover::before {
+  transform: scaleX(1);
+}
+
+.provide__row-title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3.25rem);
   font-weight: 400;
   line-height: 1.15;
-}
-
-.provide__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-}
-
-.provide__item {
-  position: relative;
-  padding: 0 2rem;
   text-align: center;
 }
 
-.provide__divider {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: var(--color-border);
+.provide__row-title a {
+  display: block;
+  padding: var(--space-4) 0;
+  color: var(--color-ink);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.provide__item-title {
-  margin: 0 0 1.25rem;
-  font-family: var(--font-serif);
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-  font-weight: 400;
-  line-height: 1.25;
-}
-
-.provide__item-text {
-  margin: 0;
-  font-size: 0.9375rem;
-  line-height: 1.7;
-  color: #4b5563;
-}
-
-.provide__footer {
-  margin: clamp(2.5rem, 6vw, 4rem) 0 0;
-  text-align: center;
-  font-family: var(--font-serif);
-  font-size: 1.125rem;
-  color: var(--color-text);
-}
-
-@media (max-width: 900px) {
-  .provide__grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
-  .provide__item {
-    padding: 0;
-  }
-
-  .provide__divider {
-    display: none;
-  }
-}
-
-@media (max-width: 640px) {
-  .provide {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
+.provide__row:hover .provide__row-title a {
+  color: var(--color-accent);
 }
